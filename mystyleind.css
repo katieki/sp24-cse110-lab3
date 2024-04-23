@@ -48,11 +48,11 @@ strong{
 h3 ~ ol, h3 + ul, audio{
     border: 1pt solid;
     margin: auto;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 2em 1em;
     
 }
 *{
-    margin-left: 4Q
+    margin-left: 4Q;
 }
 .container{
     display: flex;
@@ -65,7 +65,7 @@ h3 ~ ol, h3 + ul, audio{
     height: auto;
     width: auto;
     grid-template-rows: 1pc 1pc 1pc 0pc;
-    grid-template-columns: 8pc 8pc 8pc 8pc;
+    grid-template-columns: 8pc 8pc;
     grid-column-gap: 1pc;
     margin-left: 4Q;
     grid-row-gap: 1pc;
@@ -109,18 +109,18 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
     color:lightpink;
     background-color:#fd3e91
 }
-@media (width:360px) {
+@media (min-aspect-ratio: 9/19){
     div{
-        color: red;
+        background:hsl(96, 37%, 89%)
     }
 }
-@media (min-width: 35rem) {
+@media (max-aspect-ratio: 16/10) {
     div {
-      background: yellow;
+      background: rgb(200, 231, 231);
     }
 }
-@media (max-width: 50rem) {
+@media (aspect-ratio:10/10) {
     div {
-      border: 2px solid blue;
+      background: rgb(247, 245, 233);
     }
 }
