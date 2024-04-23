@@ -1,3 +1,8 @@
+@property --my-color{
+    syntax: "<color>";
+    initial-value: lightpink;
+    inherits: false;
+}
 h1{
     background-color:midnightblue;
     color: rgb(247,247,255);
@@ -103,14 +108,16 @@ h2:has(+section){
     position: static;
 }
 a:hover{
-    color:lightpink;
+    --my-color: aqumarine;
+    color:var(--my-color,lightpink);
 }
 a:active,button:active{
     color:palevioletred;
 }
 button:hover, button:focus, 
 a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
-    color:lightpink;
+    --my-color: rgb(234, 234, 234);
+    color:var(--my-color, lightpink);
     background-color:#fd3e91
 }
 @media (min-aspect-ratio: 9/19){
