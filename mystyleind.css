@@ -7,13 +7,17 @@ h2{
 }
 .agenda{
     color: #fd3e91;
+    font-family: "Sacramento", cursive;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 180%
 }
 #attendance{
     color: hsl(0, 82%, 35%);
 }
 .launch, #orgvenfridge{
     color:cornflowerblue;
-    text-decoration: rgb(62, 27, 236) wavy underline;
+    text-decoration: rgb(235, 229, 111) wavy underline;
 }
 #event{
     background-color: color(display-p3 1 0.5 0 / .5);;
@@ -122,5 +126,30 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
 @media (aspect-ratio:10/10) {
     div {
       background: rgb(247, 245, 233);
+    }
+}
+#LG{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal
+}
+#refrigerators{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal
+}
+.theme{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    & > span{
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 23px;
+        color: rgb(100, 106, 110);
+        &:hover, &:focus{
+            background-color:hsl(235, 57%, 31%);
+            color:aliceblue;
+        }
     }
 }
