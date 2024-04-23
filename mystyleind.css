@@ -79,3 +79,9 @@ h3.comments{
 h2:has(+section){
     color:rgb(75, 75, 78);
 }
+#block{
+    display: block;
+}
+#inline{
+    display: inline-block
+}
