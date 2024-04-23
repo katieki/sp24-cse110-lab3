@@ -98,3 +98,14 @@ h2:has(+section){
 #fridge{
     position: static;
 }
+a:hover{
+    color:lightpink;
+}
+a:active,button:active{
+    color:palevioletred;
+}
+button:hover, button:focus, 
+a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
+    color:lightpink;
+    background-color:#fd3e91
+}
