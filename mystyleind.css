@@ -64,10 +64,10 @@ h3 ~ ol, h3 + ul, audio{
     display: grid;
     height: auto;
     width: auto;
-    min-width: 20%;
     grid-template-rows: 1pc 1pc 1pc 0pc;
     grid-template-columns: 8pc 8pc 8pc 8pc;
     grid-column-gap: 1pc;
+    margin-left: 4Q;
     grid-row-gap: 1pc;
     justify-content: space-evenly;
     align-content: stretch;
@@ -108,4 +108,19 @@ button:hover, button:focus,
 a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
     color:lightpink;
     background-color:#fd3e91
+}
+@media (width:360px) {
+    div{
+        color: red;
+    }
+}
+@media (min-width: 35rem) {
+    div {
+      background: yellow;
+    }
+}
+@media (max-width: 50rem) {
+    div {
+      border: 2px solid blue;
+    }
 }
