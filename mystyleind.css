@@ -43,7 +43,7 @@ strong{
     border: 5px solid hsl(199, 90%, 57%);
     margin-left: 15mm;
 }
-h3 ~ ol, h3 + ul{
+h3 ~ ol, h3 + ul, audio{
     border: 1pt solid;
     margin: auto;
     padding: 1em 1em 1em 1em;
@@ -60,7 +60,10 @@ h3 ~ ol, h3 + ul{
 }
 .attendance{
     display: grid;
-    grid-template-rows: 2pc 2pc 2pc 2pc;
+    height: auto;
+    width: auto;
+    min-width: 20%;
+    grid-template-rows: 1pc 1pc 1pc 0pc;
     grid-template-columns: 8pc 8pc 8pc 8pc;
     grid-column-gap: 1pc;
     grid-row-gap: 1pc;
@@ -84,4 +87,9 @@ h2:has(+section){
 }
 #inline{
     display: inline-block
+}
+#video{
+    width: 40%;
+    height: 30%;
+    max-width: 60%;
 }
