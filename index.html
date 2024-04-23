@@ -193,15 +193,16 @@
                             <label for="1">4</label><br/>
                         </fieldset>
                     </form>
-                  
-                    1.
-                    <img class="1" src="1.png" alt="1" width="300"/>
-                    2.
-                    <img class="2" src="2.png" alt="2" width="300"/>
-                    3.
-                    <img class="3" src="3.png" alt="3" width="300"/>
-                    4.
-                    <img class="4" src="4.png" alt="4" width="300"/>
+                    <ol>
+                        <li class="color-scheme">
+                    <img class="1" src="1.png" alt="1" width="200"/></li>
+                        <li class="color-scheme">
+                        <img class="2" src="2.png" alt="2" width="200"/></li>
+                        <li class="color-scheme">
+                    <img class="3" src="3.png" alt="3" width="200"/></li>
+                        <li class="color-scheme">
+                    <img class="4" src="4.png" alt="4" width="200"/></li>
+                    </ul>
                 </li>
             </ol>
         </section>
@@ -225,20 +226,20 @@
             <h3>Comments/Questions/Concerns</h3>
             <ul>
                 <li>Claire Dunphy: 
-                    
+                    <p>
                     “What is the <em>point</em> of the soda dispenser? It would be 
-                    a <em>waste</em> of space and energy!”
+                    a <em>waste</em> of space and energy!”</p>
                 </li>
           
                 <li>Dwight Schrute: 
-           
+                    <p>
                     “Any plans of downsizing? At least downsizing the event in order to 
-                    save costs.”
+                    save costs.”</p>
                 </li>                
             
                 <li>Michael Scott: 
-              
-                    “We should throw the event like a big happy family <em>party</em>!”
+                    <p>
+                    “We should throw the event like a big happy family <em>party</em>!”</p>
                 </li>
             </ul>
         </section>
@@ -259,9 +260,9 @@
     <hr/>
     <br/>
     <footer>
-        <img class="whiteboard" src="IMG_5787.png" alt="whiteboard" width="400"/>
-        <br/>
-        <label for="how-was-meeting">How was this meeting:</label>
+        <img class="whiteboard" src="IMG_5787.png" alt="whiteboard" width="400" />
+        <br/><br/>
+        <label for="how-was-meeting" class="rate-meeting">How was this meeting:</label>
         <input list="ratings" id="how-was-meeting" name="how-was-meeting"/>
         <datalist id="ratings">
             <option value="Awesome and efficient!"></option>
@@ -270,7 +271,7 @@
             <option value="N/A"></option>
         </datalist>
         <br/><br/>
-        <label for="next-meeting">When should the next prospective meeting be:</label>
+        <label for="next-meeting" class="rate-meeting">When should the next prospective meeting be:</label>
         <select name="time" id="next-meeting">
             <option value="">--Please Choose an option--</option>
             <option value="In a couple days">In a couple days</option>
@@ -279,12 +280,11 @@
             <option value="TBD">TBD</option>
         </select>
         <br/><br/>
-        <label for="feedback">Any comments/questions/concerns for this meeting:</label>
+        <label for="feedback" class="rate-meeting">Any comments/questions/concerns for this meeting:</label>
         <br/>
-        <textarea id="feedback" name="feedback" rows="5" cols="33">
+        <textarea id="feedback" name="feedback" rows="5" cols="33" class="rate-meeting">
         In today's meeting...
         </textarea>
-        <br/><br/>
         <form action="sendacopy" method="get" class="sendacopy">
             <div class="sendacopy">
                 <label for="email">Enter your email:</label>
