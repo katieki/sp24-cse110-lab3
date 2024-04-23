@@ -20,3 +20,31 @@ h2{
 strong{
     background-color: color-mix(in lch, plum 40%, pink);
 }
+.color-scheme{
+    border-width: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: royalblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em; 
+    padding-right: 1em;
+    margin-top: 10mm;
+    margin-bottom: 10mm; 
+    margin-left: 0mm;
+    margin-right: 60mm;
+}
+.rate-meeting{
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 1vh 1vh 1vh 1vh;
+}
+.whiteboard{
+    border: 5px solid hsl(199, 90%, 57%);
+    margin-left: 15mm;
+}
+h3 ~ ol, h3 + ul{
+    border: 1pt solid;
+    margin: auto;
+    padding: 1em 1em 1em 1em;
+    
+}
