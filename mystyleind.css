@@ -12,7 +12,8 @@ h2{
     color: hsl(0, 82%, 35%);
 }
 .launch, #orgvenfridge{
-    color:cornflowerblue
+    color:cornflowerblue;
+    text-decoration: rgb(62, 27, 236) wavy underline;
 }
 #event{
     background-color: color(display-p3 1 0.5 0 / .5);;
@@ -65,4 +66,16 @@ h3 ~ ol, h3 + ul{
     grid-row-gap: 1pc;
     justify-content: space-evenly;
     align-content: stretch;
+}
+li > span{
+    color:blue
+}
+p em{
+    color:rgb(222, 64, 101)
+}
+h3.comments{
+    text-decoration: underline;
+}
+h2:has(+section){
+    color:rgb(75, 75, 78);
 }
