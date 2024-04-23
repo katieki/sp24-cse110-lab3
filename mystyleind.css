@@ -29,10 +29,10 @@ strong{
     padding-bottom: 1em;
     padding-left: 1em; 
     padding-right: 1em;
-    margin-top: 10mm;
-    margin-bottom: 10mm; 
+    margin-top: 5mm;
+    margin-bottom: 5mm; 
     margin-left: 0mm;
-    margin-right: 60mm;
+    margin-right: 7mm;
 }
 .rate-meeting{
     margin: 2rem 2rem 2rem 2rem;
@@ -50,4 +50,19 @@ h3 ~ ol, h3 + ul{
 }
 *{
     margin-left: 4Q
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex-basis: auto;
+}
+.attendance{
+    display: grid;
+    grid-template-rows: 2pc 2pc 2pc 2pc;
+    grid-template-columns: 8pc 8pc 8pc 8pc;
+    grid-column-gap: 1pc;
+    grid-row-gap: 1pc;
+    justify-content: space-evenly;
+    align-content: stretch;
 }
