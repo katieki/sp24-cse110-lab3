@@ -1,36 +1,33 @@
-@property --my-color{
+@property --my-color{                                           /*css variable for lightpink color*/
     syntax: "<color>";
     initial-value: lightpink;
     inherits: false;
 }
-h1{
-    background-color:midnightblue;
-    color: rgb(247,247,255);
+h1{                                                             /*h1 color change*/
+    background-color:midnightblue;                            /*color name*/
+    color: rgb(247,247,255);                                  /*rgb color*/
 }
-h2{
+h2{                                                             /*h2 color change*/
     background-color: lightgray;
 }
-.agenda{
-    color: #fd3e91;
+.agenda{                                                        /*agenda title color/font change*/
+    color: #fd3e91;                                           /*hex code8*/
     font-family: "Sacramento", cursive;
     font-weight: 300;
     font-style: normal;
     font-size: 180%
 }
-#attendance{
-    color: hsl(0, 82%, 35%);
-}
-.launch, #orgvenfridge{
+.launch, #orgvenfridge{                                         /*title color change and text deco*/
     color:cornflowerblue;
     text-decoration: rgb(235, 229, 111) wavy underline;
 }
 #event{
-    background-color: color(display-p3 1 0.5 0 / .5);;
+    background-color: color(display-p3 1 0.5 0 / .5);;          /*wider-gamut color*/
 }
-strong{
-    background-color: color-mix(in lch, plum 40%, pink);
+strong{                                             
+    background-color: color-mix(in lch, plum 40%, pink);    /*wider-gamut color*/
 }
-.color-scheme{
+.color-scheme{                                                  /*box model*/
     border-width: 2px;
     border-radius: 8px;
     border-style: solid;
@@ -44,32 +41,32 @@ strong{
     margin-left: 0mm;
     margin-right: 7mm;
 }
-.rate-meeting{
+.rate-meeting{                                                  /*box model short*/
     margin: 2rem 2rem 2rem 2rem;
     padding: 1vh 1vh 1vh 1vh;
 }
-.whiteboard{
+.whiteboard{                                                    /*box model and position*/
     border: 5px solid hsl(199, 90%, 57%);
     margin-left: 15mm;
     position: relative;
     left: 400px;
 }
-h3 ~ ol, h3 + ul, audio{
+h3 ~ ol, h3 + ul, audio{                                        /*box model and gen sib/adj sib combinators*/
     border: 1pt solid;
     margin: auto;
     padding: 1em 1em 2em 1em;
     
 }
-*{
+*{                                                              /*universal selector*/
     margin-left: 4Q;
 }
-.container{
+.container{                                                     /*flex for color schemes*/
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
     flex-basis: auto;
 }
-.attendance{
+.attendance{                                                    /*grid for attendance checklist includes sizing*/
     display: grid;
     height: auto;
     width: auto;
@@ -81,48 +78,48 @@ h3 ~ ol, h3 + ul, audio{
     justify-content: space-evenly;
     align-content: stretch;
 }
-li > span{
+li > span{                                                      /*child combinator*/
     color:blue
 }
-p em{
+p em{                                                           /*descendant combinator on emphasis*/
     color:rgb(222, 64, 101)
 }
-h3.comments{
+h3.comments{                                                    /*text deco and combine two selectors*/
     text-decoration: underline;
 }
-h2:has(+section){
+h2:has(+section){                                               /*new selector :has()*/
     color:rgb(75, 75, 78);
 }
-#block{
+#block{                                                         /*display block*/
     display: block;
 }
-#inline{
+#inline{                                                        /*display inline block*/
     display: inline-block
 }
-#video{
+#video{                                                         /*sizing adjustment for video*/
     width: 40%;
     height: 30%;
     max-width: 60%;
 }
-#fridge{
+#fridge{                             
     position: static;
 }
-a:hover{
+a:hover{                                                        /*fallback variable needed*/
     --my-color: aqumarine;
     color:var(--my-color,lightpink);
 }
-a:active,button:active{
+a:active,button:active{                                         /*:active pseudo class*/
     color:palevioletred;
 }
-button:hover, button:focus, 
+button:hover, button:focus,                                     /*:hover pseudo class and attribute selector*/
 a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
-    --my-color: rgb(234, 234, 234);
-    color:var(--my-color, lightpink);
+    --my-color: rgb(234, 234, 234);                         
+    color:var(--my-color, lightpink);                         /*fallback variable not needed*/
     background-color:#fd3e91
 }
-@media (min-aspect-ratio: 9/19){
+@media (min-aspect-ratio: 9/19){                                /*responsiveness aspect ratio query*/
     div{
-        background:hsl(96, 37%, 89%)
+        background:hsl(96, 37%, 89%)                          /*hsl color*/
     }
 }
 @media (max-aspect-ratio: 16/10) {
@@ -135,7 +132,7 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
       background: rgb(247, 245, 233);
     }
 }
-#LG{
+#LG{                                                            /*font adjustments*/
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal
@@ -145,7 +142,7 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
     font-weight: 300;
     font-style: normal
 }
-.theme{
+.theme{                                                         /*font adjustment and nested selector*/
     font-family:'Times New Roman', Times, serif;
     font-size: 1rem;
     & > span{
