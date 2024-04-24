@@ -1,8 +1,4 @@
-/*@property --my-color{  */                                         /*css variable for lightpink color*/
-    /*syntax: "<color>";
-    initial-value: lightpink;
-    inherits: false;
-}*/
+
 h1{                                                             /*h1 color change*/
     background-color:midnightblue;                            /*color name*/
     color: rgb(247,247,255);                                  /*rgb color*/
