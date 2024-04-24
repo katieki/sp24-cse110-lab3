@@ -1,4 +1,3 @@
-
 h1{                                                             /*h1 color change*/
     background-color:midnightblue;                            /*color name*/
     color: rgb(247,247,255);                                  /*rgb color*/
@@ -101,7 +100,6 @@ h2:has(+section){                                               /*new selector :
     position: static;
 }
 a:hover{                                                        /*fallback variable needed*/
-    --my-color: aqumarine;
     color:var(--my-color,lightpink);
 }
 a:active,button:active{                                         /*:active pseudo class*/
