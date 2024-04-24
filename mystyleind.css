@@ -22,10 +22,10 @@ h2{                                                             /*h2 color chang
     text-decoration: rgb(235, 229, 111) wavy underline;
 }
 #event{
-    background-color: color(srgb 1 0.9 0 /0.5);;          /*wider-gamut color*/
+    color: color(srgb 0.4 0.3 0 /0.8);          /*wider-gamut color*/
 }
 strong{                                             
-    background-color: color-mix(in srgb, plum 40%, pink);    /*wider-gamut color*/
+    color: color-mix(in srgb, rgb(248, 104, 248) 40%, rgb(229, 0, 38));    /*wider-gamut color*/
 }
 .color-scheme{                                                  /*box model*/
     border-width: 2px;
@@ -143,7 +143,7 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
     font-style: normal
 }
 .theme{                                                         /*font adjustment and nested selector*/
-    font-family:'Times New Roman', Times, serif;
+    font-family:"Times New Roman", Times, serif;
     font-size: 1rem;
     & > span{
         font-family: "Alegreya Sans SC", sans-serif;
