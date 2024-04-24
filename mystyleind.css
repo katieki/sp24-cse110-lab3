@@ -22,10 +22,10 @@ h2{                                                             /*h2 color chang
     text-decoration: rgb(235, 229, 111) wavy underline;
 }
 #event{
-    background-color: color(display-p3 1 0.5 0 / .5);;          /*wider-gamut color*/
+    background-color: color(srgb 1 0.9 0 /0.5);;          /*wider-gamut color*/
 }
 strong{                                             
-    background-color: color-mix(in lch, plum 40%, pink);    /*wider-gamut color*/
+    background-color: color-mix(in srgb, plum 40%, pink);    /*wider-gamut color*/
 }
 .color-scheme{                                                  /*box model*/
     border-width: 2px;
