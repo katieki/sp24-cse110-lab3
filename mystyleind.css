@@ -25,7 +25,7 @@ h2{                                                             /*h2 color chang
     color: color(srgb 0.4 0.3 0 /0.8);          /*wider-gamut color*/
 }
 strong{                                             
-    color: color-mix(in srgb, rgb(248, 104, 248) 40%, rgb(229, 0, 38));    /*wider-gamut color*/
+    color: color-mix(in srgb, rgb(255, 251, 0) 40%, rgb(255, 0, 43));    /*wider-gamut color*/
 }
 .color-scheme{                                                  /*box model*/
     border-width: 2px;
@@ -150,7 +150,7 @@ a[href="Lab-2-audio.m4a"]:hover, a[href="Lab-2-audio.m4a"]:focus{
         font-weight: 400;
         font-style: normal;
         font-size: 23px;
-        color: rgb(100, 106, 110);
+        color: rgb(80, 129, 162);
         &:hover, &:focus{
             background-color:hsl(235, 57%, 31%);
             color:aliceblue;
